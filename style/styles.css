@@ -1,0 +1,119 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL RULES */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Raleway", sans-serif;
+    box-sizing: inherit;
+}
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    background-color: rgb(39, 174, 96);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container > * {
+    flex: 0 0 45%;
+}
+
+.quote-container {
+    background-color: white;
+    padding : 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    border-radius: .5rem;
+}
+
+
+
+.quote-icon,
+.quote-text {
+    color : rgb(39, 174, 96);
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: -.02rem;
+}
+
+.quote-author {
+    text-align: right;
+    color: rgb(39, 174, 96);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.social-container {
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+}
+
+.social-container > * {
+    flex: 1 0 50%;
+}
+
+
+.icon-link:visited,
+.icon-link:link {
+    background-color: rgb(39, 174, 96);
+    padding: 1.2rem;
+    color : #ffffff;
+    border-radius: .3rem;
+    text-align: center;
+    border : 2px solid transparent;
+
+}
+
+
+.btn-green {
+    background-color: rgb(39, 174, 96);
+    color : #ffffff;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    border : 2px solid transparent;
+}
+
+
+.icon-link:hover,
+.btn-green:hover {
+    background-color: #ffffff;
+    color : rgb(39, 174, 96);
+    border-color: rgb(39, 174, 96);
+}
+
+
+.footer {
+    color: #fff;
+    padding : 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
